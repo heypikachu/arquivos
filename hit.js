@@ -38,6 +38,7 @@ function sc_show_hit(id, count, style, min) {
         cd.style.height = c.height + "px";
         cd.style.overflow = "hidden";
         cd.style.cursor = "pointer";
+        cd.title = "Free Hit Counter";
         var x = 0;
         for (i = 0; i < min; i++) {
             p = i - r;
@@ -59,6 +60,9 @@ function sc_show_hit(id, count, style, min) {
             cd.appendChild(ca);
             x += charw;
         }
+        cd.onclick = function() {
+            window.top.location = "http://www.supercounters.com/stats/" + id;
+        };
         ct_insert(cd, "supercounters.com/ssl/hit.js");
     };
     c.src = url;
