@@ -14,7 +14,7 @@ $(document).ready(function(){
 		document.body.removeChild(elemento);
 
 		//EFEITO
-		$(this).css({"background":"#f7d38a"}).delay("100").queue(function() {$(this).css({"background":"f7d38a"});});   
+		$(this).css({"background":"#f7d38a"}).delay("100").queue(function() {$(this).css({"background":"000"});});   
 		
 		//MENSAGEM EFEITO
 		$('span').fadeIn('slow', function () {$(this).delay(750).fadeOut('slow');});			
